@@ -8,24 +8,31 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="Feedback App">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".Login">
+        <activity android:name=".Login"
+            android:label="Login">
         </activity>
-        <activity android:name=".Registration">
+        <activity android:name=".Registration"
+            android:label="Registration" android:parentActivityName=".Login">
         </activity>
-        <activity android:name=".WriteFeedback">
+        <activity android:name=".WriteFeedback"
+            android:label="Give a Feedback" android:parentActivityName=".Home">
         </activity>
-        <activity android:name=".ReadFeedback">
+        <activity android:name=".ReadFeedback"
+            android:label="Read Feedbacks" android:parentActivityName=".Home">
         </activity>
-        <activity android:name=".ViewProfile">
+        <activity android:name=".ViewProfile"
+            android:label="Profile" android:parentActivityName=".Home">
         </activity>
-        <activity android:name=".Home">
+        <activity android:name=".Home"
+            android:label="Home">
         </activity>
     </application>
 
